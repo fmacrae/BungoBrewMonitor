@@ -25,20 +25,18 @@ sudo reboot
 
 
 
-Wire your 811 sensor
+Wire your 811 sensor (VOC and Co2)
 as per https://www.makerblog.info/cjmcu-811-with-raspberry-pi.html
 I'm using a CJMCU-811
 
-```
-sudo nano /boot/config.txt
-```
+Grabbed this guy's great code to make it work:
+https://gist.github.com/xxlukas42/60ae08f75e68a0cfcdb7c9dd60145d34
 
-Change bus speed with the additonal line:
 
-```
-dtparam=i2c_baudrate=10000
 
-```
+Added BMP280 following these instructions (temp and barometric pressure): 
+https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/circuitpython-test
+
 
 
 CORS setup if needing to host html file outside bucket:
