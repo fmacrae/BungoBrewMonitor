@@ -15,4 +15,17 @@ Wire your 811 sensor
 as per https://www.makerblog.info/cjmcu-811-with-raspberry-pi.html
 I'm using a CJMCU-811
 
+CORS setup if needing to host html file outside bucket:
 
+[
+    {
+        "AllowedHeaders": [],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
